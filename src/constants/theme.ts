@@ -44,6 +44,19 @@ export const Fonts = Platform.select({
   },
 });
 
+export const Typography = {
+  headline: { fontSize: 26, lineHeight: 32, fontWeight: 700 },
+  subtitle1: { fontSize: 18, lineHeight: 16, fontWeight: 700 },
+  subtitle2: { fontSize: 16, lineHeight: 16, fontWeight: 700 },
+  subtitle3: { fontSize: 14, lineHeight: 16, fontWeight: 700 },
+  body1: { fontSize: 18, lineHeight: 16, fontWeight: 400 },
+  body2: { fontSize: 16, lineHeight: 16, fontWeight: 400 },
+  body3: { fontSize: 14, lineHeight: 16, fontWeight: 400 },
+  caption: { fontSize: 12, lineHeight: 12, fontWeight: 400 },
+} as const;
+
+export type ThemedTextType = keyof typeof Typography;
+
 export const Spacing = {
   half: 2,
   one: 4,

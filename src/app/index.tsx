@@ -6,7 +6,7 @@ import { ThemedView } from '@/components/themed-view';
 export default function HomeScreen() {
   return (
     <ThemedView style={styles.container} themeColor="secondary">
-      <ThemedText type="headline" themeColor="backgroundLight">
+      <ThemedText type="subtitle3" themeColor="backgroundLight">
         Fiteo
       </ThemedText>
     </ThemedView>
