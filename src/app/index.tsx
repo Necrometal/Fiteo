@@ -1,10 +1,15 @@
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet } from 'react-native';
+
+import { ThemedText } from '@/components/themed-text';
+import { ThemedView } from '@/components/themed-view';
 
 export default function HomeScreen() {
   return (
-    <View style={styles.container}>
-      <Text>Fiteo</Text>
-    </View>
+    <ThemedView style={styles.container} themeColor="secondary">
+      <ThemedText type="headline" themeColor="backgroundLight">
+        Fiteo
+      </ThemedText>
+    </ThemedView>
   );
 }
 
@@ -13,6 +18,5 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#1D3461'
   },
 });
